@@ -1,0 +1,69 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<title>Cloud Stair</title>
+<link rel="stylesheet" href="css/index.css">
+<script src="js/util.js"></script>
+<script src="js/46esab.js"></script>
+<script src="js/index.js"></script>
+
+<div id="header">
+	<h1>Cloud Stair</h1>
+	<small>
+		Copyfree (C) eXerigumo Clanjor, 2012.<br>
+		The source code of this web site is licensed under CC-BY 3.0.
+	</small>
+</div>
+
+<div id="browser" class="relative browser">
+	<div class="button btn-add">
+		<div style="width: 30px; float: right;">+</div>
+		<input id="proj" type="text" placeholder="project name">
+		<input id="addr" type="text" placeholder="address">
+	</div>
+	<div id="content" class="content">
+		<div id="download" class="download">
+			<h1>No Project.</h1>
+		</div>
+		<div id="download" class="download">
+			<div style="float: right">
+			<div class="button" style="width: 60px;">STOP</div>
+			<div class="button" style="width: 60px;">DELETE</div>
+			</div>
+			<b>blah...</b><br>
+			<progress></progress>
+		</div>
+		<div id="download" class="download">
+			<div style="float: right">
+			<div class="button" style="width: 60px;">STOP</div>
+			<div class="button" style="width: 60px;">DELETE</div>
+			</div>
+			<b>blah...</b><br>
+			<progress max=100 value=30></progress>
+		</div>
+		<div id="download" class="download">
+			<div style="float: right">
+			<div class="button" style="width: 60px;">GET</div>
+			<div class="button" style="width: 60px;">DELETE</div>
+			</div>
+			<b style="color: #2a2;">blah...</b><br>
+			done.
+		</div>
+		<div id="download" class="download">
+			<div style="float: right">
+			<div class="button" style="width: 60px;" onclick="start_project('<PROJ_46ESAB>');">START</div>
+			<div class="button" style="width: 60px;">DELETE</div>
+			</div>
+			<b>blah...</b><br>
+			<i>Not started yet.</i>
+		</div>
+	</div>
+</div>
+
+<div id="loading" class="modal modal-hide">
+	<div id="loading-content" class="loading">
+		<div id="loading-text">Loading...<br></div>
+		<progress></progress>
+	</div>
+</div>
+
